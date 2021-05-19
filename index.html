@@ -69,20 +69,28 @@ overflow: hidden
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
-</style>
+#button {
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+    background-color: deeppink;
+}
 
+</style>
 
 </head>
 
 <body>
+
 <div id="header"><h1>&hearts; Агеева Вера &hearts;</h1></div>
 
 <div id="kotik">
     <img src="photoVera.JPG" width="100%" height="100%" alt="фото Веры сломалось">
+    <button class="button" id="button" display="flex">НАЖМИ СЮДА</button>
 </div>
 
 <div id="slonik">
-    <div id="triangle_rotation"></div>
+    <div id="triangle_rotation" style="display: none"></div>
     <h2>&larr; Резюме </h2>
     <p>Выпускница лицея №2, 11й класс с физ/мат уклоном.</p>
 
@@ -116,7 +124,19 @@ overflow: hidden
     <a href="https://www.itechart.by/" class="header__link">Хочу работать здесь &rarr;</a>
     <p><br></p>
     <a href="https://www.epam.com/" class="header__link">или здесь &rarr;</a>
+
 </div>
 <div id="footer">&copy; Агеев Дмитрий, папа)</div>
+
+<script type="text/javascript">
+    document.querySelector('#button').addEventListener('click', ()=> document.querySelector('#triangle_rotation').style.display = 'block')
+    // document.querySelector('#button').addEventListener('click', ()=>    {
+
+
+
+
+
+</script>
+
 </body>
 </html>
